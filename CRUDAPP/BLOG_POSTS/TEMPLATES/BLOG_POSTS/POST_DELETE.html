@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog</title>
+</head>
+<body>
+<h1>Delete Blog</h1>
+<form method="POST">{% csrf_token %}
+    Are you sure want to delete this {{delete}} ?
+    <input type="submit" value="Confirm Delete">
+</form>
+</body>
+
+<a href="{% url 'view1' %}">Back</a>
+</html>
