@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog</title>
+</head>
+<body>
+<div class="main">
+    <form method="POST"></form>
+
+    {% for da in list %}
+
+    Name:{{ da.name }}<br/>
+    Content:{{ da.content }}<br/>
+    Rating:{{ da.rating}}<br/>
+    <br/>
+    <a href="{% url 'view3' da.id %}">Detele</a>
+    <hr/>
+    {% endfor %}
+
+
+</div>
+
+<a href="{% url 'view2' %}">Add New</a>
+
+</body>
+</html>

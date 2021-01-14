@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+    <meta charset="UTF-8">
+    <title>consultadd</title>
+    <h3>Login</h3>
+</head>
+<body>
+<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+<form method="POST" action="log">
+    {% csrf_token %}
+    <label > Username: </label>
+    <input type="text" name="Username" placeholder="username" ><br><br>
+    <label > Email: </label>
+    <input type="email" name="email"  placeholder="email" ><br><br>
+    <label > Password: </label>
+    <input type="password" name="Password" placeholder="password" ><br><br>
+    <input type="submit" value="Login">
+</form><br><br>
+
+<button type="button"><a href="/">Back</a></button>
+<br><br><br>
+
+{% for m in messages %}
+{{m}}
+{% endfor %}
+
+</body>
+</html>

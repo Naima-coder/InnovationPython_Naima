@@ -1,0 +1,41 @@
+body{font-family: Helvetica;
+background-color: black;
+padding: 30px;
+text-align : center;
+font-size: 69 px;
+color: white;
+}
+h1{font-Family: Ariel;}
+.cls{font-size: 100px;
+float:center;
+}
+div{
+color:white;
+opacity:1;
+text-align:left;
+}
+div.a{padding-left:-10px;
+background-color:tomato;
+color:white;
+opacity:1;
+border-style:outset;
+font-family:serif;
+width:1300px;
+text-align: right;
+height: 100px;
+margin:auto;
+
+}
+#cls{text-align:right;
+font-family:Calibri;
+font-size:15px;}
+li{
+text_align:left;
+padding:5px;
+display:inline-block;
+}
+h2{ text-align:center;
+font-family:Ariel;}
+p{background-color: black;
+color:white;}
+padding: 20px 35px 20px 35px;

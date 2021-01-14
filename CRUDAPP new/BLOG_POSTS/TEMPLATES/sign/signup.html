@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+    <meta charset="UTF-8">
+    <title>CONSULT ADD</title>
+    <h3>Sign up</h3>
+</head>
+<body>
+
+<form method="POST" action="reg">
+    {% csrf_token %}
+    <label > Username: </label>
+    <input type="text" name="Username" placeholder="Username" ><br><br>
+    <label > First name: </label>
+    <input type="text" name="First name" placeholder="First name" ><br><br>
+    <label > Last name: </label>
+    <input type="text"  name="Last name" placeholder="Last name" ><br><br>
+    <label > Password: </label>
+    <input type="text" name="Password" placeholder="Password" ><br><br>
+    <label > Re-enter password: </label>
+    <input type="text" name= "Password2" placeholder="Re-Password" ><br><br>
+
+    <input type="submit" value="Signup">
+
+</form>
+<br><br>
+<button type="button"><a href="/">Back</a></button>
+{% for m in messages %}
+{{m}}
+{% endfor %}
+</body>
+</html>
