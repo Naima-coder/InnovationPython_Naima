@@ -39,7 +39,7 @@ def ex(func):
     def inner(a,b):
         if b>a:
             a,b=b,a
-        return fun(a,b)
+        return func(a,b)
     return inner
 
 example=ex(fun)
